@@ -20,17 +20,30 @@
 <body>
    <header>
       <h1>Hands-on Project 2-1</h1>
-   </header>
-
-   <article>
-     <div>
+      <script>
+        
        function CelsiusToFahrenheit(degree) {
   return degree * 1.8 + 32;
 }
         function FarenheitToCelsius(degree) {
   return degree - 32 / 1.8;
+           
+          document.getElementById("cValue").onchange = function() {
+  let cDegree = document.getElementById("cValue").value;
+  document.getElementById("fValue").value = CelsiusToFahrenheit(cDegree);
+};
+           document.getElementById("fValue").onchange = function() {
+  let fDegree = document.getElementById("fValue").value;
+  document.getElementById("cValue").value = FahrenheitToCelsius(fDegree);
+};
+
+
 }
-     </div>
+      </script>
+      
+   </header>
+
+   <article>
       <h2>Fahrenheit (&#176; F) to Celsius (&#176; C) converter</h2>
       <form>
          <div>
