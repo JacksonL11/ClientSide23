@@ -1,4 +1,7 @@
 
+ <p id="timer"></p>
+
+<script>
   var count = 60;
   var counter = setInterval(timer, 1000);
 
@@ -11,4 +14,6 @@
 
     document.getElementById("timer").innerHTML = count + " secs";
   }
+</script>
+
 
