@@ -1,9 +1,9 @@
-function startTimer(endDate, display) {
-  var now = new Date();
-  var remaining = (endDate - now) / 1000;
+function startTimer(hours, display) {
+  var remaining = hours * 3600;
   setInterval(function () {
-    var days = Math.floor(remaining / (3600 * 24));
-    display.textContent = days + " days";
+    var hours = Math.floor(remaining / 3600);
+    var minutes = Math.floor((remaining % 3600) / 60);
+    display.textContent = hours + " hours " + minutes + " mins";
     if (--remaining < 0) {
       clearInterval(this);
     }
