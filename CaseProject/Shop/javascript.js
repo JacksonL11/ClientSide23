@@ -1,16 +1,12 @@
-
- var count = 60;
-  var counter = setInterval(timer, 1000);
-
-  function timer() {
-    count = count - 1;
-    if (count <= 0) {
-      clearInterval(counter);
-      return;
+function startTimer(duration, display) {
+  var timer = duration;
+  setInterval(function () {
+    display.textContent = --timer + " secs";
+    if (timer === 0) {
+      clearInterval(this);
     }
-
-    document.getElementById("timer").innerHTML = count + " secs";
-  }
+  }, 1000);
+}
 
 
 
