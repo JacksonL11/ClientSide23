@@ -1,14 +1,10 @@
-function startTimer(hours, display) {
-  var remaining = hours * 3600;
+function startTimer(duration, display) {
+  var timer = duration;
   setInterval(function () {
-    var hours = Math.floor(remaining / 3600);
-    var minutes = Math.floor((remaining % 3600) / 60);
-    display.textContent = hours + " hours " + minutes + " mins";
-    if (--remaining < 0) {
+    display.textContent = --timer + " secs";
+    if (timer === 0) {
       clearInterval(this);
     }
   }, 1000);
 }
-
-
 
