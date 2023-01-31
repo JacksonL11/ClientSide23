@@ -1,1 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jackson's Motor Mall</title>
+  </head>
+  <body>
+    <header>
+      <h1>SHOP</h1>
+    </header>
+ 
+    <main>
+      <section id="featured-cars">
+        <h2>Featured Cars</h2>
+        <p>Check out our featured cars:</p>
+        <ul>
+          <li>2018 Toyota Camry</li>
+          <li>2020 Honda Civic</li>
+          <li>2019 Ford Mustang</li>
+        </ul>
+      </section>
+      <section id="all-cars">
+        <h2>All Cars</h2>
+        <p>Here is a list of all the cars we have:</p>
+        <ul>
+          <li>2018 Toyota Camry</li>
+          <li>2020 Honda Civic</li>
+          <li>2019 Ford Mustang</li>
+          <li>2021 Tesla Model 3</li>
+          <li>2022 Chevrolet Bolt</li>
+        </ul>
+      </section>
+   
+    </main>
+    <footer>
+      <p>&copy; 2023 Car Shop</p>
+    </footer>
+  </body>
+</html>
 
