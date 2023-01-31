@@ -3,7 +3,8 @@ function startTimer(duration, display) {
   setInterval(function () {
     var hours = Math.floor(timer / 3600);
     var minutes = Math.floor((timer % 3600) / 60);
-    display.textContent = hours + " hours " + minutes + " mins";
+    var seconds = timer % 60;
+    display.textContent = hours + " hours " + minutes + " mins " + seconds + " secs";
     if (--timer < 0) {
       clearInterval(this);
     }
