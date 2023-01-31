@@ -3,7 +3,20 @@
   <head>
     <title>Jackson's Motor Mall</title>
     <h2>HOT NEW DEALS</h2>
-    <script src="javascript.js" defer ></script>
+    <script>
+       var count = 60;
+  var counter = setInterval(timer, 1000);
+
+  function timer() {
+    count = count - 1;
+    if (count <= 0) {
+      clearInterval(counter);
+      return;
+    }
+
+    document.getElementById("timer").innerHTML = count + " secs";
+  }
+ </script>
   </head>
   <body>
     <header>
