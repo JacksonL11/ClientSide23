@@ -1,3 +1,4 @@
+console.log(document.getElementById("countdown"))
 document.addEventListener("DOMContentLoaded", function() {
   var hoursLeft = 24;
 
