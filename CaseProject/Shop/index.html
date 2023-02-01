@@ -1,12 +1,27 @@
-<!DOCTYPE html>
 <html>
   <head>
     <title>Jackson's Motor Mall</title>
-    
+    <section>
     <h2>HOT NEW DEALS</h2>
- 
-    <script src="javascript.js" defer></script>
-  
+    </section>
+      <script>
+   
+      document.addEventListener("DOMContentLoaded", function() {
+        var hoursLeft = 24;
+
+        function countDown() {
+          hoursLeft--;
+          document.getElementById("countdown").innerHTML = "Hours left in the day: " + hoursLeft;
+
+          if (hoursLeft === 0) {
+            clearInterval(timer);
+            document.getElementById("countdown").innerHTML = "Time's up!";
+          }
+        }
+
+        var timer = setInterval(countDown, 3600 * 1000);
+      });
+    </script>
   </head>
   <body>
     <header>
@@ -15,14 +30,13 @@
  
     <main>
       <section id="featured-cars">
-       
-      <p>Check Out Our Hot New Deals ENDING SOON:</p>
+        <div id="countdown"></div>
+        <p>Check Out Our Hot New Deals ENDING SOON:</p>
         <ul>
           <li>2018 Toyota Camry</li>
           <li>2020 Honda Civic</li>
           <li>2019 Ford Mustang</li>
         </ul>
-     
       </section>
       <section id="all-cars">
         <h2>All Cars</h2>
@@ -40,7 +54,7 @@
     <footer>
       <p>&copy; 2023 Car Shop</p>
     </footer>
+
+  
   </body>
 </html>
-
-
