@@ -1,10 +1,13 @@
-function startTimer(duration, display) {
-  var timer = duration;
-  setInterval(function () {
-    display.textContent = --timer + " secs";
-    if (timer === 0) {
-      clearInterval(this);
-    }
-  }, 1000);
+var hoursLeft = 24;
+
+function countDown() {
+   hoursLeft--;
+   console.log("Hours left in the day: " + hoursLeft);
+
+   if (hoursLeft === 0) {
+      clearInterval(timer);
+      console.log("Time's up!");
+   }
 }
 
+var timer = setInterval(countDown, 3600 * 1000);
