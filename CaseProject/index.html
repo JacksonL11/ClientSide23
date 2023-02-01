@@ -6,20 +6,19 @@
 <body>
 
 
-<button id="calculateButton">Calculate Number Of Cars</button>
+<button id="convertButton">Convert to Seconds</button>
+<p id="output"></p>
 
-
-<script defer>
-  const button = document.querySelector('#calculateButton');
+<script>
+  const button = document.querySelector('#convertButton');
   const output = document.querySelector('#output');
 
   button.addEventListener('click', () => {
-    const result = 1 + 1 + 1 + 1 + 1;
-     output.innerText = result;
-    });
-  }
-
-  window.onload = calculate;
+    const days = 30;
+    const secondsInADay = 86400;
+    const totalSeconds = days * secondsInADay;
+    output.innerText = totalSeconds + ' seconds';
+  });
 </script>
 
   <header>
