@@ -37,7 +37,22 @@ var x = setInterval(function() {
     clearInterval(x);
     document.getElementById("demo").innerHTML = "EXPIRED";
   }
-}, 1000);
+}, 1000)
+  <button id="convertButton">Convert to Seconds</button>
+<p id="output"></p>
+
+
+  const button = document.querySelector('#convertButton');
+  const output = document.querySelector('#output');
+
+  button.addEventListener('click', () => {
+    const days = 27;
+    const secondsInADay = 86400;
+    const totalSeconds = days * secondsInADay;
+    output.innerText = totalSeconds + ' seconds';
+  });
+
+
 </script>
   <header>
     <h1>Jackson's Motor Mall</h1>
