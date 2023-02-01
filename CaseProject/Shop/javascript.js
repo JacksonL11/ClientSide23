@@ -1,14 +1,16 @@
+ console.log("Script running!");
+      document.addEventListener("DOMContentLoaded", function() {
+        var hoursLeft = 24;
 
-var hoursLeft = 24;
+        function countDown() {
+          hoursLeft--;
+          document.getElementById("countdown").innerHTML = "Hours left in the day: " + hoursLeft;
 
-function countDown() {
-  hoursLeft--;
-  document.getElementById("countdown").innerHTML = "Hours left in the day: " + hoursLeft;
+          if (hoursLeft === 0) {
+            clearInterval(timer);
+            document.getElementById("countdown").innerHTML = "Time's up!";
+          }
+        }
 
-  if (hoursLeft === 0) {
-    clearInterval(timer);
-    document.getElementById("countdown").innerHTML = "Time's up!";
-  }
-}
-
-var timer = setInterval(countDown, 3600 * 1000);
+        var timer = setInterval(countDown, 3600 * 1000);
+      });
