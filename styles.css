@@ -14,8 +14,7 @@ h1 {
     font-family: Georgia, serif;
     font-size: 36px;
     margin: 20px 0;
-     border: 1px solid black;
-  padding: 20px;
+ 
 }
 
 h2 {
@@ -23,9 +22,7 @@ h2 {
     text-align: center;
     font-size: 24px;
     margin: 10px 0;
-       border: 1px solid black;
-  padding: 20px;
-
+ 
 }
 
 nav {
@@ -33,7 +30,8 @@ nav {
     display: flex;
     justify-content: center;
     margin: 20px 0;
-
+     border: 1px solid black;
+  padding: 20px;
 }
 
 nav a {
