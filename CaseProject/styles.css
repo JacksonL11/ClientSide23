@@ -5,7 +5,7 @@ body {
 }
 
 header {
-  background-color: lightgray;
+  background-color: CE2323;
   display: flex;
   justify-content: space-between;
   padding: 20px;
@@ -79,7 +79,7 @@ section p {
 }
 
 .contact-us {
-  background-color: lightgray;
+  background-color: CE2323;
   padding: 20px;
   margin-top: 20px;
   text-align: center;
@@ -101,7 +101,7 @@ section p {
 }
 
 footer {
-  background-color: lightgray;
+  background-color: CE2323;
   display: flex;
   justify-content: center;
   padding: 20px;
