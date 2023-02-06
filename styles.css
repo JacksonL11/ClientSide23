@@ -42,3 +42,12 @@ image {
 opacity: 5%
     
 }
+
+background {
+  background-image: url("code.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
