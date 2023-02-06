@@ -1,15 +1,15 @@
 body {
-  font-family: Gerogia, sans-serif;
-  margin: 0;
+  font-family: Georgia, sans-serif;
+  margin: 0
   padding: 0;
 }
 
 header {
-  background-color: CE2323;
+  background-color: lightgray;
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  align-items: left;
+  align-items: center;
 }
 
 header h1 {
@@ -26,23 +26,19 @@ header p {
 
 nav {
   display: flex;
-  justify-content: center;
-  text-align: center;
+  justify-content: left;
 }
 
 nav a {
   padding: 10px 20px;
   font-size: 18px;
   text-decoration: none;
-  color: CE2323;
+  color: black;
   margin-right: 10px;
-  text-align: center;
-
 }
 
 section {
   padding: 40px;
-  
 }
 
 section h2 {
@@ -57,7 +53,7 @@ section p {
 }
 
 .hot-deals {
-  background-color: CE2323;
+  background-color: lightyellow;
   padding: 20px;
   margin-top: 20px;
   text-align: center;
@@ -83,7 +79,7 @@ section p {
 }
 
 .contact-us {
-  background-color: CE2323;
+  background-color: lightgray;
   padding: 20px;
   margin-top: 20px;
   text-align: center;
@@ -97,7 +93,7 @@ section p {
 }
 
 .contact-us input[type="submit"] {
-  background-color: CE2323;
+  background-color: lightblue;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -105,11 +101,10 @@ section p {
 }
 
 footer {
-  background-color: CE2323;
+  background-color: lightgray;
   display: flex;
   justify-content: center;
   padding: 20px;
   font-size: 18px;
   color: gray;
 }
-
