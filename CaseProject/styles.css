@@ -5,7 +5,7 @@ body {
 }
 
 header {
-  background-color: CE2323;
+  background-color: CC2121;
   display: flex;
   justify-content: space-between;
   padding: 20px;
@@ -53,7 +53,7 @@ section p {
 }
 
 .hot-deals {
-  background-color: lightyellow;
+  background-color: CC2121;
   padding: 20px;
   margin-top: 20px;
   text-align: center;
@@ -93,7 +93,7 @@ section p {
 }
 
 .contact-us input[type="submit"] {
-  background-color: lightblue;
+  background-color: CC2121;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -101,7 +101,7 @@ section p {
 }
 
 footer {
-  background-color: CE2323;
+  background-color: CC2121;
   display: flex;
   justify-content: center;
   padding: 20px;
