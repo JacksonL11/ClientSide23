@@ -5,7 +5,7 @@ body {
 }
 
 header {
-  background-color: red;
+  background-color: CE2323;
   display: flex;
   justify-content: space-between;
   padding: 20px;
@@ -34,7 +34,7 @@ nav a {
   padding: 10px 20px;
   font-size: 18px;
   text-decoration: none;
-  color: black;
+  color: CE2323;
   margin-right: 10px;
   text-align: center;
 
@@ -57,7 +57,7 @@ section p {
 }
 
 .hot-deals {
-  background-color: lightyellow;
+  background-color: CE2323;
   padding: 20px;
   margin-top: 20px;
   text-align: center;
@@ -83,7 +83,7 @@ section p {
 }
 
 .contact-us {
-  background-color: lightgray;
+  background-color: CE2323;
   padding: 20px;
   margin-top: 20px;
   text-align: center;
@@ -97,7 +97,7 @@ section p {
 }
 
 .contact-us input[type="submit"] {
-  background-color: lightblue;
+  background-color: CE2323;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -105,7 +105,7 @@ section p {
 }
 
 footer {
-  background-color: lightgray;
+  background-color: CE2323;
   display: flex;
   justify-content: center;
   padding: 20px;
