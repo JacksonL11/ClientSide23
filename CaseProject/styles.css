@@ -27,6 +27,7 @@ header p {
 nav {
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 
 nav a {
@@ -36,6 +37,7 @@ nav a {
   color: black;
   margin-right: 10px;
   text-align: center;
+
 }
 
 section {
