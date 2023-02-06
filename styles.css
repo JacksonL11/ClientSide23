@@ -30,8 +30,7 @@ nav {
     display: flex;
     justify-content: center;
     margin: 20px 0;
-     border: 1px solid black;
-  padding: 20px;
+  
 }
 
 nav a {
@@ -40,7 +39,8 @@ nav a {
     margin: 0 10px;
     text-decoration: none;
     color: black;
-   
+        border: 1px solid black;
+  padding: 20px;
 
 }
 
