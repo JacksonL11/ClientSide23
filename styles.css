@@ -38,13 +38,8 @@ nav a {
     color: black;
 }
 
-image {
-opacity: 5%
-    
-}
-
 background {
-  background-image: url("code.jpg");
+  background-image: url(""C:\Users\jackson.toncrey\Downloads\code.jpg"");
   background-size: cover;
   background-repeat: no-repeat;
   height: 500px;
