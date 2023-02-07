@@ -34,8 +34,14 @@ header p {
 }
 
 nav {
-  display: flex;
-  justify-content: left;
+     font-family: Georgia, serif;
+    font-size: 18px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #000000;
+        border: 1px solid black;
+  padding: 20px;
+
 }
 
 nav a {
@@ -52,7 +58,7 @@ section {
     margin: 0 10px;
     text-decoration: none;
     color: #000000;
-        border: 1px solid black;
+        border: 1px solid red;
   padding: 20px;
 
 }
@@ -101,10 +107,14 @@ section p {
 }
 
 .contact-us {
-  background-color: CE2323;
+    font-family: Georgia, serif;
+    font-size: 18px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #000000;
+        border: 1px solid red;
   padding: 20px;
-  margin-top: 20px;
-  text-align: center;
+
 }
 
 .contact-us input, .contact-us textarea {
