@@ -40,14 +40,21 @@ nav {
 
 nav a {
   padding: 10px 20px;
-  font-size: 18px;
+  font-size: 25px;
   text-decoration: none;
   color: black;
   margin-right: 10px;
 }
 
 section {
-  padding: 40px;
+     font-family: Georgia, serif;
+    font-size: 18px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #000000;
+        border: 1px solid black;
+  padding: 20px;
+
 }
 
 section h2 {
