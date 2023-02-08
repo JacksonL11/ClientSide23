@@ -7,15 +7,16 @@ body {
 header {
 .back {
   background-image: url(matte.jpg);
+ 
 }
 
 header h1 {
-   background-color: #CC2121;
-    color: #000000;
+
+    color: #FFD700;
     text-align: center;
-    padding: 30px 0;
+    
     text-align: center;
-    font-family: Georgia, serif;
+    font-family: Allura, serif;
     font-size: 36px;
     margin: 20px 0;
  
