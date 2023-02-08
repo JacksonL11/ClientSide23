@@ -18,3 +18,31 @@
   font-size: 18px;
   margin-bottom: 0;
 }
+.collage {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .car {
+    width: 25%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .car1 {
+    background-image: url(car1.jpg);
+  }
+  
+  .car2 {
+    background-image: url(car2.jpg);
+  }
+  
+  .car3 {
+    background-image: url(car3.jpg);
+  }
+  
+  .car4 {
+    background-image: url(car4.jpg);
+  }
+  
