@@ -19,12 +19,12 @@ body {
 
 
 header h1 {
-    text-shadow: 1px 1px black;
+    text-shadow: 1px 1px white;
     color: #FFD700;
     text-align: center;
     text-align: center;
     font-family: brush script mt, cursive;
-    font-size: 100px;
+    font-size: 300px;
     margin: 20px 0;
  
 }
