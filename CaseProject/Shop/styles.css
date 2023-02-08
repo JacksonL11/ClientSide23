@@ -1,23 +1,4 @@
-#countdown {
-  width: 400px;
-  height: 100px;
-  margin: 0 auto;
-  padding: 20px;
-  text-align: center;
-  background-color: lightgray;
-  border-radius: 10px;
-  box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
-}
 
-#countdown h2 {
-  font-size: 22px;
-  margin-bottom: 20px;
-}
-
-#countdown p {
-  font-size: 18px;
-  margin-bottom: 0;
-}
 .collage {
     display: flex;
     flex-wrap: wrap;
