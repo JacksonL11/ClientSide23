@@ -29,3 +29,22 @@ header h1 {
  
 }
 
+.Shop,
+.About Us,
+.Sponsors,
+.Contact Us {
+  display: inline-block;
+  margin: 20px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+a:hover {
+  color: blue;
+}
+
