@@ -10,7 +10,7 @@ body {
   background-image: url(matte.jpg);
   background-size: cover;
   background-position: center;
-  height: 300px;
+  height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,7 +24,7 @@ header h1 {
     text-align: center;
     text-align: center;
     font-family: brush script mt, cursive;
-    font-size: 300px;
+    font-size: 250px;
     margin: 20px 0;
  
 }
