@@ -36,15 +36,6 @@ header h1 {
   text-align: left;
 }
 
-a {
-  text-decoration: none;
-  color: black;
-  font-size: 18px;
-}
-
-a:hover {
-  color: blue;
-}
 .tabs {
   display: flex;
   flex-direction: column;
