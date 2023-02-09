@@ -29,9 +29,7 @@ header h1 {
  
 }
 
-.Shop,
-.Partners,
-.About{
+.bio {
   font-family: Georgia, sans;
   display: inline-block;
   margin: 20px;
