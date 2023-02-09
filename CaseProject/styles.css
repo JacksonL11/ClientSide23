@@ -53,9 +53,9 @@ a:hover {
 }
 
 .tab-btn {
-  background-color: #ddd;
+  background-color: #000000;
   border: none;
-  color: black;
+  color: #FFD700;
   cursor: pointer;
   outline: none;
   padding: 14px 100px;
@@ -64,7 +64,7 @@ a:hover {
 }
 
 .tab-btn.active {
-  background-color: #ccc;
+  background-color: #000000;
 }
 
 .tab-content {
