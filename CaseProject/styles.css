@@ -31,11 +31,12 @@ header h1 {
 
 .Shop,
 .About Us,
-.Sponsors,
-.Contact Us {
+.Partners,
+.About{
+  font-family: Georgia, sans;
   display: inline-block;
   margin: 20px;
-  text-align: center;
+  text-align: left;
 }
 
 a {
