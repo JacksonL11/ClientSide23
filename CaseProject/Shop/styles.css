@@ -1,29 +1,33 @@
-
-.collage {
+#wrapper { 
     display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .car {
-    width: 25%;
-    height: 200px;
-    background-size: cover;
-    background-position: center;
-  }
-  
-  .car1 {
-    background-image: url(car1.jpg);
-  }
-  
-  .car2 {
-    background-image: url(car2.jpg);
-  }
-  
-  .car3 {
-    background-image: url(car3.jpg);
-  }
-  
-  .car4 {
-    background-image: url(car4.jpg);
-  }
-  
+    } 
+li{ 
+    width: 100px; 
+    height: 30px; 
+    list-style: none; 
+    background-color: rgb(1, 4, 49); 
+    border-radius: 10px; 
+    margin: 5px; 
+    padding: 5px; 
+    color: white; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+} 
+#badge {
+     width: 20px; 
+     height: 20px; 
+     background-color: #f0ad4e; 
+     color: white; 
+     padding: 2px 2px; 
+     border-radius: 5px; 
+     margin-left: 10px; 
+     text-align: center; 
+     float: right; 
+     } 
+#items #badge { /* hides the count badge on the shopping list */ 
+    display: none; 
+} 
+#container { 
+    margin: 50px;
+} 
