@@ -47,4 +47,32 @@ a {
 a:hover {
   color: blue;
 }
+.tabs {
+  display: flex;
+  flex-direction: column;
+}
+
+.tab-btn {
+  background-color: #ddd;
+  border: none;
+  color: black;
+  cursor: pointer;
+  outline: none;
+  padding: 14px 16px;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+.tab-btn.active {
+  background-color: #ccc;
+}
+
+.tab-content {
+  display: none;
+  padding: 16px;
+}
+
+.tab-content.active {
+  display: block;
+}
 
