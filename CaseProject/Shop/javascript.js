@@ -1,56 +1,44 @@
-let items_array = [
-    { "name": "carrots", "id": 1, count: 1 },
-    { "name": "spinach", "id": 2, count: 1 },
-    { "name": "cookies", "id": 3, count: 1 },
-    { "name": "lettuce", "id": 4, count: 1 },
-    { "name": "avocado", "id": 5, count: 1 }
-];
+/*
+	Add to cart fly effect with jQuery. - May 05, 2013
+	(c) 2013 @ElmahdiMahmoud - fikra-masri.by
+	license: https://www.opensource.org/licenses/mit-license.php
+*/   
 
-let cart = [];
-function appendNode(parent, element) {
-    parent.appendChild(element);
-};
+$('.add-to-cart').on('click', function () {
+        var cart = $('.shopping-cart');
+        var imgtodrag = $(this).parent('.item').find("img").eq(0);
+        if (imgtodrag) {
+            var imgclone = imgtodrag.clone()
+                .offset({
+                top: imgtodrag.offset().top,
+                left: imgtodrag.offset().left
+            })
+                .css({
+                'opacity': '0.5',
+                    'position': 'absolute',
+                    'height': '150px',
+                    'width': '150px',
+                    'z-index': '100'
+            })
+                .appendTo($('body'))
+                .animate({
+                'top': cart.offset().top + 10,
+                    'left': cart.offset().left + 10,
+                    'width': 75,
+                    'height': 75
+            }, 1000, 'easeInOutExpo');
+            
+            setTimeout(function () {
+                cart.effect("shake", {
+                    times: 2
+                }, 200);
+            }, 1500);
 
-function getDiv(container) {
-    return document.getElementById(container);
-};
-
-function createNode(node) {
-    let element = document.createElement(node);
-    return element;
-};
-function displayItems(items, container) {
-    let items_container = getDiv(container);
-    items_container.innerHTML = '';
-
-    for (let i = 0; i < items.length; i++) {
-        let item = items[i];
-
-        let item_node = createNode("li");
-        item_node.setAttribute("id", item.id);
-
-        if (item.count > 0) {
-            item_node.innerHTML = `${item.name} 
-            <span id="badge">${item.count}</span>`;
-            appendNode(items_container, item_node);
+            imgclone.animate({
+                'width': 0,
+                    'height': 0
+            }, function () {
+                $(this).detach()
+            });
         }
-    }
-}
-items_container.innerHTML = '';
-displayItems(items_array, "items");
-function addOrRemoveItemsFromCart(action) {
-    let container = '';
-
-    if (action == "add") {
-        container = getDiv("items");
-
-        takeAction(container, action)
-    }
-    else if (action == "remove") {
-        container = getDiv("cart");
-
-      
-    };
-}
-addOrRemoveItemsFromCart('add');
-addOrRemoveItemsFromCart('remove');
+    });
