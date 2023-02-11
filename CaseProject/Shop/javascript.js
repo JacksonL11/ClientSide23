@@ -26,6 +26,7 @@ shoppingCartElement.addEventListener("click", () => {
   closeButton.textContent = "Close";
   closeButton.addEventListener("click", () => {
     cart.remove();
+    shoppingCartOpen = false;
   });
   cart.appendChild(closeButton);
   
@@ -37,6 +38,7 @@ shoppingCartElement.addEventListener("click", () => {
     item.textContent = `${name}: $${price}`;
     list.appendChild(item);
   }
+  shoppingCartOpen = true;
 });
 
 function updateShoppingCart() {
