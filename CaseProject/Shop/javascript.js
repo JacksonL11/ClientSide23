@@ -39,6 +39,7 @@ shoppingCartElement.addEventListener("click", () => {
     list.appendChild(item);
   }
   shoppingCartOpen = true;
+}
 });
 
 function updateShoppingCart() {
