@@ -9,7 +9,13 @@ for (let item of items) {
     const name = item.querySelector("h2").textContent;
     const priceString = item.querySelector("p").textContent;
     const price = parseInt(priceString.replace(/[^0-9]/g, ""));
-    shoppingCart.push({ name, price });
+    const index = shoppingCart.findIndex(cartItem => cartItem.name === name);
+
+    if (index === -1) {
+      shoppingCart.push({ name, price });
+    } else {
+      shoppingCart.splice(index, 1);
+    }
     updateShoppingCart();
   });
 }
@@ -38,6 +44,15 @@ shoppingCartElement.addEventListener("click", () => {
     for (const { name, price } of shoppingCart) {
       const item = document.createElement("li");
       item.textContent = `${name}: $${price}`;
+      const removeButton = document.createElement("button");
+      removeButton.textContent = "Remove";
+      removeButton.addEventListener("click", () => {
+        const index = shoppingCart.findIndex(cartItem => cartItem.name === name);
+        shoppingCart.splice(index, 1);
+        item.remove();
+        updateShoppingCart();
+      });
+      item.appendChild(removeButton);
       list.appendChild(item);
     }
     shoppingCartOpen = true;
