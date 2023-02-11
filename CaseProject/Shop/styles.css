@@ -20,7 +20,7 @@ h1 {
     font-weight: normal;
     text-transform: uppercase;
     padding: 4px 20px;
-    float: left;
+    float: bottom;
 }
 .clear {
     clear: both;
@@ -45,14 +45,14 @@ h2 {
     font-size: 16px;
     display: block;
     border-bottom: 1px solid #ccc;
-    margin: 0 0 15px 0;
-    padding: 0 0 10px 0;
+    margin: 0 0 10px 0;
+    padding: 0 0 05px 0;
 }
 button {
     border: 1px solid #722A1B;
     padding: 4px 14px;
     background-color: #fff;
-    color: #722A1B;
+    color: ##FFD700.;
     text-transform: uppercase;
     float: right;
     margin: 5px 0;
