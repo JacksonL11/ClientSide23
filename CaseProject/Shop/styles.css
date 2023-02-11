@@ -33,13 +33,15 @@ h1 {
     background-color: #fff;
     float: left;
     margin: 0 10px 10px 0;
-    width: 50px;
+    width: 209px;
     padding: 10px;
-    height: 35px;
+    height:300px;
 }
 .item img {
     display: block;
     margin: auto;
+    height: 150px;
+    width: 190px;
 }
 h2 {
     font-size: 16px;
