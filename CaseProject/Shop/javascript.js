@@ -11,20 +11,15 @@ for (let item of items) {
     const price = parseInt(priceString.replace(/[^0-9]/g, ""));
     const index = shoppingCart.findIndex(cartItem => cartItem.name === name);
 
-  let index = -1;
-for (let i = 0; i < shoppingCart.length; i++) {
-  if (shoppingCart[i].name === name) {
-    index = i;
-    break;
-  }
+    if (index === -1) {
+      shoppingCart.push({ name, price, quantity: 1 });
+    } else {
+      shoppingCart[index].quantity++;
+    }
+    
+    updateShoppingCart();
+  });
 }
-
-if (index === -1) {
-  shoppingCart.push({ name, price, quantity: 1 });
-} else {
-  shoppingCart[index].quantity++;
-}
-
 
 shoppingCartElement.addEventListener("click", () => {
   if (!shoppingCartOpen) {
@@ -47,15 +42,19 @@ shoppingCartElement.addEventListener("click", () => {
     const list = document.createElement("ul");
     cart.appendChild(list);
     
-    for (const { name, price } of shoppingCart) {
+    for (const { name, price, quantity } of shoppingCart) {
       const item = document.createElement("li");
-      item.textContent = `${name}: $${price}`;
+      item.textContent = `${name} x ${quantity}: $${price * quantity}`;
       const removeButton = document.createElement("button");
       removeButton.textContent = "Remove";
       removeButton.addEventListener("click", () => {
         const index = shoppingCart.findIndex(cartItem => cartItem.name === name);
-        shoppingCart.splice(index, 1);
-        item.remove();
+        if (shoppingCart[index].quantity > 1) {
+          shoppingCart[index].quantity--;
+        } else {
+          shoppingCart.splice(index, 1);
+          item.remove();
+        }
         updateShoppingCart();
       });
       item.appendChild(removeButton);
@@ -66,5 +65,9 @@ shoppingCartElement.addEventListener("click", () => {
 });
 
 function updateShoppingCart() {
-  shoppingCartElement.textContent = `Shopping Cart (${shoppingCart.length})`;
+  let totalQuantity = 0;
+  for (const { quantity } of shoppingCart) {
+    totalQuantity += quantity;
+  }
+  shoppingCartElement.textContent = `Shopping Cart (${totalQuantity})`;
 }
