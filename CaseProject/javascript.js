@@ -11,11 +11,13 @@ tabBtns.forEach((btn) => {
       try {
       (input.value.match(validRegex)) 
     
-        alert("Valid email address!");
+        
+        
+        alert("Thanks For Your Submission!");
     
         document.form1.text1.focus();
 
-        window.alert("Thanks For Your Submission!");
+     
     
    
     
