@@ -13,7 +13,7 @@ tabBtns.forEach((btn) => {
     
         
         
-        alert("Thanks For Your Submission!");
+        window.alert("Thanks For Your Submission!");
     
         document.form1.text1.focus();
 
