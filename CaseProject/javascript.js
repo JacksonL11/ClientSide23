@@ -15,9 +15,9 @@ tabBtns.forEach((btn) => {
     
         document.form1.text1.focus();
 
-        window.alert("Thanks For Your Submission!")
+        window.alert("Thanks For Your Submission!");
     
-        return true;
+   
     
       } 
       catch(err) {
@@ -26,7 +26,7 @@ tabBtns.forEach((btn) => {
     
         document.form1.text1.focus();
     
-        return false;
+ 
     
       }
     
