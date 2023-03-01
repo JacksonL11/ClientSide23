@@ -1,9 +1,19 @@
-const tabBtns = document.querySelectorAll('.tab-btn');
-const tabContents = document.querySelectorAll('.tab-content');
+const shopBtn = document.getElementById('shop');
+const aboutBtn = document.getElementById('about');
+const partnersBtn = document.getElementById('partners');
 
-tabBtns.forEach((btn) => {
-  btn.addEventListener('click', () => {
-    const target = document.querySelector(btn.dataset.target);
+shopBtn.addEventListener('click', () => {
+  window.location.href = shopBtn.dataset.link;
+});
+
+aboutBtn.addEventListener('click', () => {
+  window.location.href = aboutBtn.dataset.link;
+});
+
+partnersBtn.addEventListener('click', () => {
+  window.location.href = partnersBtn.dataset.link;
+});
+
     function ValidateEmail(input) {
 
       var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
