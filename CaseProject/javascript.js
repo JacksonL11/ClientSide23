@@ -1,32 +1,20 @@
-const shopBtn = document.getElementById('shop');
-const aboutBtn = document.getElementById('about');
-const partnersBtn = document.getElementById('partners');
-
-shopBtn.addEventListener('click', () => {
-  window.location.href = shopBtn.dataset.link;
-});
-
-aboutBtn.addEventListener('click', () => {
-  window.location.href = aboutBtn.dataset.link;
-});
-
-partnersBtn.addEventListener('click', () => {
-  window.location.href = partnersBtn.dataset.link;
-});
-
+const tabBtns = document.querySelectorAll('.tab-btn');
+const tabContents = document.querySelectorAll('.tab-content');
+tabBtns.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    const target = document.querySelector(btn.dataset.target);
     function ValidateEmail(input) {
-
       var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-    
+
       try {
+      (input.value.match(validRegex)) 
      (input.value.match(validRegex) 
-    
-        
-        
+
+
+
         window.alert("Thanks For Your Submission!");
     
         document.form1.text1.focus();
-
      
     
    
@@ -43,7 +31,6 @@ partnersBtn.addEventListener('click', () => {
       }
     
     }
-
     if (btn.hasAttribute('data-link')) {
       window.location.href = btn.dataset.link;
     } else {
