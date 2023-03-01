@@ -8,7 +8,7 @@ tabBtns.forEach((btn) => {
 
       try {
       (input.value.match(validRegex)) 
-     (input.value.match(validRegex) 
+   
 
 
 
