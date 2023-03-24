@@ -1,20 +1,4 @@
-window.onload = function() {
-  var popup = document.getElementById("popup-form");
-  var form = document.getElementById("verification-form");
-  var close = document.getElementById("close-popup");
-  
-  popup.style.display = "flex";
-  
-  form.addEventListener("submit", function(event) {
-    event.preventDefault(); // prevent form from submitting
-    popup.style.display = "none";
-    // process form data here
-  });
-  
-  close.onclick = function() {
-    popup.style.display = "none";
-  }
-}
+
 
 const items = document.querySelectorAll(".item");
 const shoppingCart = [];
