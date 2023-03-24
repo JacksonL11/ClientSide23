@@ -1,25 +1,16 @@
 
+const verificationForm = document.getElementById("verification-form");
+const popupForm = document.getElementById("popup-form");
 
+verificationForm.addEventListener("submit", function(event) {
+  event.preventDefault(); // prevent form from submitting
 
-   window.onload = function() {
-  var popupForm = document.getElementById('popup-form');
-  var mainContent = document.getElementById('main-content');
-  var verifyButton = document.querySelector('#verification-form button[type="submit"]');
-  var closeButton = document.getElementById('close-popup');
+  // perform form validation here
 
-  // Display the popup form on page load
-  popupForm.classList.add('show');
+  popupForm.style.display = "none"; // hide the popup form
+});
 
-  // Hide the popup form and show the main content when the "Verify" button is clicked
-  verifyButton.addEventListener('click', function(event) {
-    event.preventDefault();
-    popupForm.classList.remove('show');
-    mainContent.classList.remove('hidden');
-  });
-
-  // Hide the popup form when the "Close" button is clicked
-  closeButton.addEventListener('click', function() {
-    popupForm.classList.remove('show');
-  });
-};
-
+const closePopupButton = document.getElementById("close-popup");
+closePopupButton.addEventListener("click", function() {
+  popupForm.style.display = "none"; // hide the popup form when the close button is clicked
+});
