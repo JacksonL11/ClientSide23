@@ -1,17 +1,4 @@
-window.onload = function() {
-  var popup = document.getElementById("popup-form");
-  var close = document.getElementById("close-popup");
-  var mainContent = document.getElementById("main-content");
 
-  popup.style.display = "flex";
-
-  close.onclick = function() {
-    // Validate form data here
-    if (validateFormData()) {
-      popup.style.display = "none";
-      mainContent.classList.remove("hidden");
-    }
-  }
 
 // Get form element
 const form = document.querySelector('form');
