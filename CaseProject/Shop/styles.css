@@ -22,7 +22,7 @@ form {
   align-items: center;
 }
 
-label, input, button {
+label, input, select, button {
   margin: 10px 0;
 }
 
@@ -34,6 +34,7 @@ button {
   border-radius: 5px;
   cursor: pointer;
 }
+
 
 
 * {
