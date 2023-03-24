@@ -1,20 +1,24 @@
 window.onload = function() {
   var popup = document.getElementById("popup-form");
-  var form = document.getElementById("verification-form");
   var close = document.getElementById("close-popup");
-  
+  var mainContent = document.getElementById("main-content");
+
   popup.style.display = "flex";
-  
-  form.addEventListener("submit", function(event) {
-    event.preventDefault(); // prevent form from submitting
-    popup.style.display = "none";
-    // process form data here
-  });
-  
+
   close.onclick = function() {
-    popup.style.display = "none";
+    // Validate form data here
+    if (validateFormData()) {
+      popup.style.display = "none";
+      mainContent.classList.remove("hidden");
+    }
+  }
+
+  function validateFormData() {
+    // Validation code here
+    // Return true if form data is valid, false otherwise
   }
 }
+
 
 const tabBtns = document.querySelectorAll('.tab-btn');
 const tabContents = document.querySelectorAll('.tab-content');
