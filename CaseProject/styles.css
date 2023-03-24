@@ -1,39 +1,67 @@
-.popup {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.popup-content {
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-label, input, button {
-  margin: 10px 0;
-}
-
-button {
-  padding: 10px 20px;
-  background-color: black;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
+<style type="text/css">
+		#popup-form {
+			display: block;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.5);
+			z-index: 999;
+			opacity: 0;
+			visibility: hidden;
+			transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+		}
+		#popup-form.show {
+			opacity: 1;
+			visibility: visible;
+		}
+		.popup-content {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background-color: #fff;
+			padding: 20px;
+			border-radius: 5px;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+			text-align: center;
+		}
+		form > * {
+			display: block;
+			margin-bottom: 10px;
+		}
+		form label {
+			display: inline-block;
+			width: 200px;
+			text-align: left;
+		}
+		form input[type="text"],
+		form select {
+			width: 60%;
+			padding: 5px;
+			border: 1px solid #ccc;
+			border-radius: 3px;
+		}
+		form button[type="submit"] {
+			padding: 10px;
+			background-color: #0095ff;
+			color: #fff;
+			border: none;
+			border-radius: 3px;
+			cursor: pointer;
+		}
+		form button[type="submit"]:hover {
+			background-color: #0072cc;
+		}
+		button#close-popup {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			background-color: transparent;
+			border: none;
+			cursor: pointer;
+		}
 
 .hidden {
   display: none;
