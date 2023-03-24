@@ -7,50 +7,7 @@
   <script src="javascript.js" defer></script>
   
 </head>
-  const form = document.getElementById('verification-form');
-form.addEventListener('submit', function(event) {
-  event.preventDefault();
-  const ageCheckbox = document.getElementById('age-checkbox');
-  const firstNameInput = document.getElementById('firstName');
-  const lastNameInput = document.getElementById('lastName');
-  const dobInput = document.getElementById('dob');
-  const licenseNumInput = document.getElementById('licenseNum');
-  const stateInput = document.getElementById('state');
-  const hasInsuranceSelect = document.getElementById('hasInsurance');
-
-  if (!ageCheckbox.checked) {
-    alert('You must be older than 18 to continue.');
-    return;
-  }
-
-  if (!firstNameInput.checkValidity()) {
-    alert('Please enter a valid first name.');
-    return;
-  }
-
-  if (!lastNameInput.checkValidity()) {
-    alert('Please enter a valid last name.');
-    return;
-  }
-
-  if (!dobInput.checkValidity()) {
-    alert('Please enter a valid date of birth (MM/DD/YYYY).');
-    return;
-  }
-
-  if (!licenseNumInput.checkValidity()) {
-    alert('Please enter a valid driver\'s license number (8 characters).');
-    return;
-  }
-
-  if (!stateInput.checkValidity()) {
-    alert('Please enter a valid state abbreviation (2 characters).');
-    return;
-  }
-
-  // Form is valid, so you can submit the form and access the rest of the website here
-});
-
+  
 
 <div id="main-content" class="hidden">
 <body>
