@@ -80,3 +80,21 @@ form.addEventListener('submit', function(event) {
     }
   });
 });
+const popup = document.getElementById('popup-form');
+    const closeBtn = document.getElementById('close-popup');
+    const verificationForm = document.getElementById('verification-form');
+
+    verificationForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+      popup.style.display = 'none';
+    });
+
+    closeBtn.addEventListener('click', () => {
+      popup.style.display = 'none';
+    });
+
+    window.addEventListener('click', (event) => {
+      if (event.target === popup) {
+        popup.style.display = 'none';
+      }
+    });
