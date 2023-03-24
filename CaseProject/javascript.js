@@ -1,5 +1,18 @@
 
+ verificationForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+      popup.style.display = 'none';
+    });
 
+    closeBtn.addEventListener('click', () => {
+      popup.style.display = 'none';
+    });
+
+    window.addEventListener('click', (event) => {
+      if (event.target === popup) {
+        popup.style.display = 'none';
+      }
+    });
 const form = document.getElementById('verification-form');
 form.addEventListener('submit', function(event) {
   event.preventDefault();
@@ -82,17 +95,4 @@ form.addEventListener('submit', function(event) {
 });
 
 
-    verificationForm.addEventListener('submit', (event) => {
-      event.preventDefault();
-      popup.style.display = 'none';
-    });
-
-    closeBtn.addEventListener('click', () => {
-      popup.style.display = 'none';
-    });
-
-    window.addEventListener('click', (event) => {
-      if (event.target === popup) {
-        popup.style.display = 'none';
-      }
-    });
+   
