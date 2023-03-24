@@ -1,93 +1,25 @@
 
 
 
-    window.addEventListener('click', (event) => {
-      if (event.target === popup) {
-        popup.style.display = 'none';
-      }
-    });
-const form = document.getElementById('verification-form');
-form.addEventListener('submit', function(event) {
-  event.preventDefault();
-  const ageCheckbox = document.getElementById('age-checkbox');
-  const firstNameInput = document.getElementById('firstName');
-  const lastNameInput = document.getElementById('lastName');
-  const dobInput = document.getElementById('dob');
-  const licenseNumInput = document.getElementById('licenseNum');
-  const stateInput = document.getElementById('state');
-  const hasInsuranceSelect = document.getElementById('hasInsurance');
+   window.onload = function() {
+  var popupForm = document.getElementById('popup-form');
+  var mainContent = document.getElementById('main-content');
+  var verifyButton = document.querySelector('#verification-form button[type="submit"]');
+  var closeButton = document.getElementById('close-popup');
 
-  if (!ageCheckbox.checked) {
-    alert('You must be older than 18 to continue.');
-    return;
-  }
+  // Display the popup form on page load
+  popupForm.classList.add('show');
 
-  if (!firstNameInput.checkValidity()) {
-    alert('Please enter a valid first name.');
-    return;
-  }
-
-  if (!lastNameInput.checkValidity()) {
-    alert('Please enter a valid last name.');
-    return;
-  }
-
-  if (!dobInput.checkValidity()) {
-    alert('Please enter a valid date of birth (MM/DD/YYYY).');
-    return;
-  }
-
-  if (!licenseNumInput.checkValidity()) {
-    alert('Please enter a valid driver\'s license number (8 characters).');
-    return;
-  }
-
-  if (!stateInput.checkValidity()) {
-    alert('Please enter a valid state abbreviation (2 characters).');
-    return;
-  }
-
-  // Form is valid, so you can submit the form and access the rest of the website here
-});
-
-      try {
-      (input.value.match(validRegex)) 
-   
-
-
-
-        window.alert("Thanks For Your Submission!");
-    
-        document.form1.text1.focus();
-     
-    
-   
-    
-      } 
-      catch(err) {
-    
-        alert("Invalid email address!");
-    
-        document.form1.text1.focus();
-    
- 
-    
-      }
-    
-    }
-    if (btn.hasAttribute('data-link')) {
-      window.location.href = btn.dataset.link;
-    } else {
-      tabBtns.forEach((b) => b.classList.remove('active'));
-      tabContents.forEach((c) => c.classList.remove('active'));
-  
-      btn.classList.add('active');
-      target.classList.add('active');
-    }
+  // Hide the popup form and show the main content when the "Verify" button is clicked
+  verifyButton.addEventListener('click', function(event) {
+    event.preventDefault();
+    popupForm.classList.remove('show');
+    mainContent.classList.remove('hidden');
   });
-});
-document.getElementById('popup-form').style.display = 'none';
-document.getElementById('hidden-element').style.display = 'block';
 
+  // Hide the popup form when the "Close" button is clicked
+  closeButton.addEventListener('click', function() {
+    popupForm.classList.remove('show');
+  });
+};
 
-   
