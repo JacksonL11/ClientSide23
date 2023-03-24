@@ -1,1 +1,41 @@
+/* Define colors */
+:root {
+  --black: #000;
+  --gold: #ffd700;
+}
+
+/* Apply black and gold styles to header */
+header {
+  background-color: var(--black);
+  color: var(--gold);
+  padding: 20px;
+  text-align: center;
+}
+
+/* Apply black and gold styles to body text */
+body {
+  background-color: var(--gold);
+  color: var(--black);
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+/* Style h1 tag */
+h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* Style p tag */
+p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Style h4 tag */
+h4 {
+  font-size: 24px;
+  font-style: italic;
+  margin-top: 50px;
+}
 
