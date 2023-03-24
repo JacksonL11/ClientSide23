@@ -36,3 +36,8 @@ if (navigator.platform.includes("Win")) {
  } else {
    alert("Your usable screen has a width greater than 1200px");
  }
+if (navigator.language.startsWith("en")) {
+  alert("Your browser's default language is English");
+} else {
+   alert("Your browser's default language is not English");
+}
