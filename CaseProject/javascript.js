@@ -1,12 +1,5 @@
 
- verificationForm.addEventListener('submit', (event) => {
-      event.preventDefault();
-      popup.style.display = 'none';
-    });
 
-    closeBtn.addEventListener('click', () => {
-      popup.style.display = 'none';
-    });
 
     window.addEventListener('click', (event) => {
       if (event.target === popup) {
@@ -93,6 +86,8 @@ form.addEventListener('submit', function(event) {
     }
   });
 });
+document.getElementById('popup-form').style.display = 'none';
+document.getElementById('hidden-element').style.display = 'block';
 
 
    
