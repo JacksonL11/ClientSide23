@@ -10,7 +10,3 @@ verificationForm.addEventListener("submit", function(event) {
   popupForm.style.display = "none"; // hide the popup form
 });
 
-const closePopupButton = document.getElementById("close-popup");
-closePopupButton.addEventListener("click", function() {
-  popupForm.style.display = "none"; // hide the popup form when the close button is clicked
-});
