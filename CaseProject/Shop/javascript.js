@@ -1,3 +1,13 @@
+window.onload = function() {
+  var popup = document.getElementById("popup-form");
+  var close = document.getElementById("close-popup");
+  popup.style.display = "flex";
+  
+  close.onclick = function() {
+    popup.style.display = "none";
+  }
+}
+
 const items = document.querySelectorAll(".item");
 const shoppingCart = [];
 const shoppingCartElement = document.querySelector(".shopping-cart");
