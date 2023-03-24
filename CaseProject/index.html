@@ -8,6 +8,45 @@
   
 </head>
 <body>
+  <div id="popup-form" class="popup">
+  <div class="popup-content">
+    <h2>Before Shopping for Cars, We Must Verify Your Identity</h2>
+    <form id="verification-form">
+      <label for="age">Age:</label>
+      <label for="age-checkbox">Are you older than 18?</label>
+      <input type="checkbox" id="age-checkbox" name="age-checkbox" required>
+
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName" pattern="[A-Za-z]+" required>
+
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName" pattern="[A-Za-z]+" required>
+
+      <label for="dob">Date of Birth (MM/DD/YYYY):</label>
+      <input type="text" id="dob" name="dob" pattern="(0[1-9]|1[0-2])\/([0-2][1-9]|3[0-1])\/\d{4}" required>
+
+      <label for="licenseNum">Driver's License Number (8 characters):</label>
+      <input type="text" id="licenseNum" name="licenseNum" pattern="[A-Za-z0-9]{8}" required>
+
+      <label for="state">State of Issue (2 characters):</label>
+      <input type="text" id="state" name="state" pattern="[A-Za-z]{2}" required>
+
+      <label for="hasInsurance">Do you have insurance?</label>
+      <select id="hasInsurance" name="hasInsurance">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+
+      <button type="submit">Verify</button>
+    </form>
+    <button id="close-popup">Close</button>
+  </div>
+</div>
+      <button type="submit">Verify</button>
+    </form>
+    <button id="close-popup">Close</button>
+  </div>
+</div>
   <h3>SHOP NOW EXCLUSIVE OFFERS FOR A LIMITED TIME</h3>
 <button id="convertButton">30 Days Left of Deal</button>
 <p id="output"></p>
