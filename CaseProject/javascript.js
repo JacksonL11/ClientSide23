@@ -10,23 +10,18 @@ verificationForm.addEventListener("submit", function(event) {
   popupForm.style.display = "none"; // hide the popup form
 });
 
-// Initialize an empty array to store user selections
-let userSelections = [];
+// Initialize an array to store user selections and select all options
+let userSelections = ['18-20', '21-30', '31-40', '41-50', '51-60', '60+'];
+const select = document.getElementById('age-range');
+Array.from(select.options).forEach(option => {
+  option.selected = true;
+});
 
-// Add an event listener to the checkboxes
-const checkboxes = document.querySelectorAll('input[type=checkbox]');
-checkboxes.forEach(checkbox => {
-  checkbox.addEventListener('change', function() {
-    // If the checkbox is checked, add the value to the array
-    if (this.checked) {
-      userSelections.push(this.value);
-    } else { // If the checkbox is unchecked, remove the value from the array
-      const index = userSelections.indexOf(this.value);
-      if (index > -1) {
-        userSelections.splice(index, 1);
-      }
-    }
-  });
+// Add an event listener to the select element
+select.addEventListener('change', function() {
+  // Get the selected options and add them to the array
+  const selectedOptions = Array.from(this.selectedOptions).map(option => option.value);
+  userSelections = selectedOptions;
 });
 
 // Convert the array to a string
