@@ -12,30 +12,16 @@
   <div class="popup-content">
     <h2>Before Shopping for Cars, We Must Verify Your Identity</h2>
     <form id="verification-form">
-      <label for="18-20">
-  <input type="checkbox" name="age" value="18-20" id="18-20">
-  18-20
-</label>
-<label for="21-30">
-  <input type="checkbox" name="age" value="21-30" id="21-30">
-  21-30
-</label>
-<label for="31-40">
-  <input type="checkbox" name="age" value="31-40" id="31-40">
-  31-40
-</label>
-<label for="41-50">
-  <input type="checkbox" name="age" value="41-50" id="41-50">
-  41-50
-</label>
-<label for="51-60">
-  <input type="checkbox" name="age" value="51-60" id="51-60">
-  51-60
-</label>
-<label for="60+">
-  <input type="checkbox" name="age" value="60+" id="60+">
-  60+
-</label>
+   <label for="age-select">Select Your Age Range:</label>
+<select id="age-select" multiple>
+  <option value="18-20" selected>18-20</option>
+  <option value="21-30" selected>21-30</option>
+  <option value="31-40" selected>31-40</option>
+  <option value="41-50" selected>41-50</option>
+  <option value="51-60" selected>51-60</option>
+  <option value="60+" selected>60+</option>
+</select>
+
 
 <p>Selected options: <span id="selections"></span></p>
 
