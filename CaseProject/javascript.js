@@ -10,26 +10,31 @@ verificationForm.addEventListener("submit", function(event) {
   popupForm.style.display = "none"; // hide the popup form
 });
 
-// Initialize an empty array to store user selections
-let userSelections = [];
+// Initialize an empty object to store user selections
+let userSelections = {};
 
-
-const checkboxes = document.querySelectorAll('input[type=checkbox]');
-checkboxes.forEach(checkbox => {
-  checkbox.addEventListener('change', function() {
-   
-    if (this.checked) {
-      userSelections.push(this.value);
-    } else { 
-      const index = userSelections.indexOf(this.value);
-      if (index > -1) {
-        userSelections.splice(index, 1);
-      }
-    }
-  });
-});
-
+// Define the options
 const options = ['18-20', '21-30', '31-40', '41-50', '51-60', '60+'];
 
+// Get a reference to the select element
+const selectElement = document.querySelector('#age-range');
 
-const selectionsString = userSelections.join(', '); // e.g. "18-20, 31-40, 51-60"
+// Create an option element for each option and add it to the select element
+options.forEach(option => {
+  const optionElement = document.createElement('option');
+  optionElement.value = option;
+  optionElement.text = option;
+  selectElement.add(optionElement);
+});
+
+// Add an event listener to the select element
+selectElement.addEventListener('change', function() {
+  // Remove all previous selections from the userSelections object
+  userSelections = {};
+
+  // Get the selected option from the select element
+  const selectedOption = this.options[this.selectedIndex].value;
+
+  // Add the selected option to the userSelections object
+  userSelections[selectedOption] = true;
+});
