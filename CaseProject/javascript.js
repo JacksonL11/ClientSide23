@@ -29,8 +29,5 @@ checkboxes.forEach(checkbox => {
   });
 });
 
-// Define the options
-const options = ['18-20', '21-30', '31-40', '41-50', '51-60', '60+'];
-
 // Convert the array to a string
 const selectionsString = userSelections.join(', '); // e.g. "18-20, 31-40, 51-60"
