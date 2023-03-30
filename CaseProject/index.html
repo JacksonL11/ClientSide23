@@ -12,9 +12,17 @@
   <div class="popup-content">
     <h2>Before Shopping for Cars, We Must Verify Your Identity</h2>
     <form id="verification-form">
-      <label for="age">Age:</label>
+      <div id="checkboxes">
+   
       <label for="age-checkbox">Please Select Your Age Group</label>
-      <input type="checkbox" id="age-range" name="age-checkbox" required>
+    
+  <label><input type="checkbox" value="18-20">18-20</label>
+  <label><input type="checkbox" value="21-30">21-30</label>
+  <label><input type="checkbox" value="31-40">31-40</label>
+  <label><input type="checkbox" value="41-50">41-50</label>
+  <label><input type="checkbox" value="51-60">51-60</label>
+  <label><input type="checkbox" value="60+">60+</label>
+</div>
 
       <label for="firstName">First Name:</label>
       <input type="text" id="firstName" name="firstName" pattern="[A-Za-z]+" required>
