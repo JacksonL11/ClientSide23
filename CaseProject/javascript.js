@@ -13,8 +13,10 @@ verificationForm.addEventListener("submit", function(event) {
 // Initialize an array to store user selections and select all options
 let userSelections = ['18-20', '21-30', '31-40', '41-50', '51-60', '60+'];
 const select = document.getElementById('age-range');
-Array.from(select.options).forEach(option => {
+Array.prototype.forEach.call(select.options, option => {
   option.selected = true;
+});
+
 });
 
 // Add an event listener to the select element
