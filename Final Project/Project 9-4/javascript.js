@@ -20,7 +20,7 @@ window.addEventListener("load", function() {
   }
 });
 
-// Function to update the user's best time in localStorage
+/// Function to update the user's best time in localStorage
 function updateRecord(event) {
   // Get the user's current time
   let currentTime = clockTimer.textContent;
@@ -29,14 +29,17 @@ function updateRecord(event) {
   // If the user doesn't have a best time, set it to the current time
   if (!bestTime) {
     localStorage.setItem("bestTime", currentTime);
+    bestText.textContent = `${currentTime} seconds`;
   }
   // If the user has a best time, compare it to the current time and update it if necessary
   else {
     if (currentTime < bestTime) {
       localStorage.setItem("bestTime", currentTime);
+      bestText.textContent = `${currentTime} seconds`;
     }
   }
 }
+
 
 // Function to get the user's best time from localStorage
 function getBestTime() {
