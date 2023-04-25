@@ -6,8 +6,8 @@ Project 06-04
 css
 Copy code
   Project to turn a selection list into a selection of hypertext links
-  Author: 
-  Date:   
+  Author: Jackson Lawrence
+  Date:   04/24/23
 
   Filename: project06-04.js
 */
