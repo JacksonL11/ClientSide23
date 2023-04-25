@@ -22,12 +22,12 @@ let year = document.getElementById("year");
 let makeOptions = document.querySelectorAll("select#make option");
 let modelOptions = document.querySelectorAll("select#model option");
 let trimOptions = document.querySelectorAll("select#trim option");
-let yearOptions = document.querySelectorAll("selece#year option");
+let yearOptions = document.querySelectorAll("select#year option");
 // The number of options within each selection list
 let makes = makeOptions.length;
 let models = modelOptions.length;
 let trims = trimOptions.length;
-let years = yearOptions.length
+let years = yearOptions.length;
 // Form button to generate the complete text of the selected vehicle
 let selectVehicle = document.getElementById("selectVehicle");
 
