@@ -1,14 +1,4 @@
 "use strict";
-/*    JavaScript 7th Edition
-      Chapter 9
-      Project 09-04
-
-      Project to store high scores from a game in local storage
-      Author: 
-      Date:   
-
-      Filename: project09-04.js
-*/
 
 /* Page Objects */
 let bestText = document.getElementById("best");
@@ -61,3 +51,6 @@ function getBestTime() {
   }
 }
 
+// Event listener that is run when the page unloads
+window.addEventListener("unload", function() {
+  // Remove the "bestTime" key from localStorage
