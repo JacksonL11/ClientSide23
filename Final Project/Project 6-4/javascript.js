@@ -16,17 +16,18 @@ Copy code
 let make = document.getElementById("make");
 let model = document.getElementById("model");
 let trim = document.getElementById("trim");
+let year = document.getElementById("year");
 
 // Option elements within the selection lists
 let makeOptions = document.querySelectorAll("select#make option");
 let modelOptions = document.querySelectorAll("select#model option");
 let trimOptions = document.querySelectorAll("select#trim option");
-
+let yearOptions = document.querySelectorAll("selece#year option");
 // The number of options within each selection list
 let makes = makeOptions.length;
 let models = modelOptions.length;
 let trims = trimOptions.length;
-
+let years = yearOptions.length
 // Form button to generate the complete text of the selected vehicle
 let selectVehicle = document.getElementById("selectVehicle");
 
@@ -87,6 +88,6 @@ selectVehicle.onclick = function() {
   let makeText = make.options[make.selectedIndex].text;
   let modelText = model.options[model.selectedIndex].text;
   let trimText = trim.options[trim.selectedIndex].text;
-
-  vehicle.textContent = `${makeText} ${modelText} ${trimText}`;
+  let yearText = year.options[year.selectedIndex].text;
+  vehicle.textContent = `${makeText} ${modelText} ${trimText} ${yearText}`;
 };
