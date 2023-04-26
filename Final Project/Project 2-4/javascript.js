@@ -17,7 +17,8 @@
  function formatCurrency(value) {
     return "$" + value.toFixed(2);
  }
-  function calculateTotal() {
+
+   function calculateTotal() {
       var chickenQty = parseInt(document.getElementById('chicken').value);
       var halibutQty = parseInt(document.getElementById('halibut').value);
       var burgerQty = parseInt(document.getElementById('burger').value);
@@ -32,3 +33,4 @@
       document.getElementById('foodTax').innerHTML = '$' + foodTax.toFixed(2);
       document.getElementById('totalBill').innerHTML = '$' + totalBill.toFixed(2);
    }
+   
