@@ -1,9 +1,4 @@
 
-
-Tyree EddingsMo
-6:50 PM (28 minutes ago)
-to conner.garris, me
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,7 +16,7 @@ to conner.garris, me
    <meta name="viewport" content="width=device-width,initial-scale=1.0">
    <title>Hands-on Project 3-1</title>
    <link rel="stylesheet" href="styles.css" />
-   <script src="project03-01_txt.js" defer></script>
+   <script src="javascript.js" defer></script>
 </head>
 
 <body>
@@ -54,39 +49,6 @@ to conner.garris, me
       </aside>
    </article>
 
-   <script>
-      const item1 = document.getElementById('item1');
-      const item2 = document.getElementById('item2');
-      const item3 = document.getElementById('item3');
-      const item4 = document.getElementById('item4');
-      const item5 = document.getElementById('item5');
-
-      const billTotal = document.getElementById('billTotal');
-
-      const menuPrices = {
-         item1: 11.95,
-         item2: 13.95,
-         item3: 10.95,
-         item4: 17.95,
-         item5: 8.95
-      };
-
-      function calculateBillTotal() {
-         const item1Cost = item1.value * menuPrices.item1;
-         const item2Cost = item2.value * menuPrices.item2;
-         const item3Cost = item3.value * menuPrices.item3;
-         const item4Cost = item4.value * menuPrices.item4;
-         const item5Cost = item5.value * menuPrices.item5;
-
-         const total = item1Cost + item2Cost + item3Cost + item4Cost + item5Cost;
-         billTotal.textContent = total.toFixed(2);
-      }
-
-      item1.addEventListener('input', calculateBillTotal);
-      item2.addEventListener('input', calculateBillTotal);
-      item3.addEventListener('input', calculateBillTotal);
-      item4.addEventListener('input', calculateBillTotal);
-      item5.addEventListener('input', calculateBillTotal);
-   </script>
+   
 </body>
 </html>
