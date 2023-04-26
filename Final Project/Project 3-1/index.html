@@ -1,31 +1,17 @@
 
-<!DOCTYPE html>
-<html>
-<head>
-   <!--
-      JavaScript 7th Edition
-      Chapter 3
-      Hands-on Project 3-1
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 
-      Author: Jackson Lawrence
-      Date:  04/25/23
-
-      Filename: project03-01.html
-   -->
-   <meta charset="utf-8" />
-   <meta name="viewport" content="width=device-width,initial-scale=1.0">
    <title>Hands-on Project 3-1</title>
    <link rel="stylesheet" href="styles.css" />
-   <script src="javascript.js" defer></script>
+   <script src="project03-01_txt.js" defer></script>
 </head>
-
 <body>
    <header>
       <h1>
          Hands-on Project 3-1
       </h1>
    </header>
-
    <article>
       <h2>Lunch selections</h2>
       <form>
@@ -45,10 +31,18 @@
          <input type="number" id="item5" value="0" min="0" max="10">
       </form>
       <aside>
-         Total Order Cost: $<span id="billTotal">0.00</span>
-      </aside>
-   </article>
+         <p>Order Details:</p>
+         <span id="orderDetails"></span>
+         <br>
+         Subtotal: $<span id="subtotal">0.00</span>
+         <br>
+         Tax (7%): $<span id="tax">0.00</span>
+         <br>
+         Total: $<span id="total">0.00</span>
+ 
+<p>Total Items Added: <span id="item-count">0</span></p>
 
-   
+
+     </aside>
+   </article>
 </body>
-</html>
