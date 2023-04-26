@@ -40,3 +40,28 @@
       item3.addEventListener('input', calculateBillTotal);
       item4.addEventListener('input', calculateBillTotal);
       item5.addEventListener('input', calculateBillTotal);
+ let count = 0;
+function addItem() {
+  count++;
+  document.getElementById("item-count").innerHTML = count;
+}
+item1.addEventListener('input', () => {
+  calculateBillTotal();
+  addItem();
+});
+item2.addEventListener('input', () => {
+  calculateBillTotal();
+  addItem();
+});
+item3.addEventListener('input', () => {
+  calculateBillTotal();
+  addItem();
+});
+item4.addEventListener('input', () => {
+  calculateBillTotal();
+  addItem();
+});
+item5.addEventListener('input', () => {
+  calculateBillTotal();
+  addItem();
+});
